@@ -39,7 +39,7 @@ function setParams {
 
 function buildRepo {
 	# check for old esx directories and remove
-	REGEX="^.*/(esxi.*)$"
+	REGEX="^.*/(esx.*)$"
 	for DIR in ${BASEDIR}/*; do
 		if [[ -d "$DIR" && ! -L "$DIR" ]]; then
 			if [[ $DIR =~ $REGEX ]]; then
